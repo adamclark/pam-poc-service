@@ -22,7 +22,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <narayana.version>5.9.0.Final</narayana.version>
-    <fabric8.version>3.5.40</fabric8.version>
+    <fabric8.version>4.4.0</fabric8.version>
     <version.io.swagger>1.6.2</version.io.swagger>
     <version.org.apache.cxf>3.4.5</version.org.apache.cxf>
     <version.org.webjars.swagger-ui>2.2.10</version.org.webjars.swagger-ui>
@@ -43,7 +43,7 @@
       <artifactId>kie-server-controller-websocket-client</artifactId>
       <version>${version.org.kie}</version>
     </dependency>
-    
+
     <!-- Swagger -->
     <dependency>
       <groupId>org.apache.cxf</groupId>
