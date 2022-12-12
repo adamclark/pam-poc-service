@@ -1,0 +1,19 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: pam-poc-service
+spec:
+  endpoints:
+  - basicAuth:
+      password:
+        key: password
+        name: pam-poc-service-creds
+      username:
+        key: user
+        name: pam-poc-service-creds
+    interval: 30s
+    path: /rest/metrics
+    port: 8090-tcp
+  selector:
+    matchLabels:
+      app: pam-poc-service
